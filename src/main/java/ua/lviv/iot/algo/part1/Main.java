@@ -36,43 +36,6 @@ public class Main {
                             .toString();
             matcher.appendReplacement(sb, reversedPhoneNumber);
 
-//            String phoneNumberReplaced = phoneNumber.replace("-", "");
-//
-//            String reversedPhoneNumber =
-//                    new StringBuilder(phoneNumberReplaced)
-//                            .reverse()
-//                            .toString();
-//
-//            //XX-XX-XX-X
-//            String subPattern1 = "\\d{2}-\\d{2}-\\d{2}-\\d";
-//            if (phoneNumber.matches(subPattern1)) {
-//                String formattedPhoneNumber = reversedPhoneNumber.charAt(0)
-//                        + "-"
-//                        + reversedPhoneNumber.substring(1, 3)
-//                        + "-"
-//                        + reversedPhoneNumber.substring(3, 5)
-//                        + "-"
-//                        + reversedPhoneNumber.substring(5);
-//                matcher.appendReplacement(sb, formattedPhoneNumber);
-//            }
-//
-//            //XXX-XX-XX
-//            String subPattern2 = "\\d{3}-\\d{2}-\\d{2}";
-//            if (phoneNumber.matches(subPattern2)) {
-//                String formattedPhoneNumber = reversedPhoneNumber.substring(0, 2)
-//                        + "-"
-//                        + reversedPhoneNumber.substring(2, 4)
-//                        + "-"
-//                        + reversedPhoneNumber.substring(4);
-//                matcher.appendReplacement(sb, formattedPhoneNumber);
-//            }
-//
-//            //XXXXXXX
-//            String subPattern3 = "\\d{7}";
-//            if (phoneNumber.matches(subPattern3)) {
-//                matcher.appendReplacement(sb, reversedPhoneNumber);
-//            }
-
         }
 
         matcher.appendTail(sb);
